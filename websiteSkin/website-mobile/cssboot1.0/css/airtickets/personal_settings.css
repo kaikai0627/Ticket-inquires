@@ -1,0 +1,169 @@
+/*个人设置*/
+.page_content {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #64818B;
+    background: #F0F0F2;
+}
+
+/*标题头*/
+.settings_title {
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    background: #29B6F6;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.settings_title .retreat {
+    position: absolute;
+}
+.settings_title .retreat span{
+    position: absolute;
+    left: 0;
+}
+
+.settings_title div {
+    width: 100%;
+    text-align: center;
+}
+
+/*内容区域样式*/
+.page_content .form_box {
+    width: 100%;
+    background: #fff;
+}
+
+.form_box > ul {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 0.3rem;
+}
+
+/*头像*/
+.form_box .head_portrait_box {
+    height: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.form_box .head_portrait {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: url("../../img/toux.jpg") -20px -20px no-repeat;
+}
+
+/*元素筛选 除头像之外*/
+.form_box li:not(.head_portrait_box) {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+/*列表统一样式*/
+.form_box > ul li {
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+
+}
+
+.form_box > ul li:last-child {
+    border-bottom: none;
+}
+
+.form_box li > div {
+    flex: 3;
+}
+
+.form_box li > div:nth-child(2) {
+    flex: 6;
+    text-align: right;
+}
+
+.form_box li > div:last-child {
+    flex: 1;
+}
+
+/*性别*/
+.form_box ul li.gender > div {
+    flex: 1;
+    text-align: center;
+    line-height: 3rem;
+    border-right: 1px solid #E8E8E8;
+}
+
+.form_box ul li.gender > div:last-child {
+    border-right: none;
+}
+
+.form_box ul li.gender span {
+    display: inline-block;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    margin-top: .5rem;
+    line-height: 1.5rem;
+}
+
+.form_box ul li.gender .man b {
+    color: #29b6f6;
+    font-weight: 500;
+}
+
+.form_box ul li.gender .man.active {
+    background-color: #29B6F6;
+
+}
+
+.form_box ul li.gender .man.active b {
+    color: #fff;
+}
+
+.form_box ul li.gender .woman b {
+    color: #FF6091;
+    font-weight: 500;
+}
+
+.form_box ul li.gender .woman.active {
+    background-color: #FF6091;
+
+}
+
+.form_box ul li.gender .woman.active b {
+    color: #fff;
+}
+
+/*图标位置 颜色*/
+.txt_rt {
+    text-align: right;
+}
+
+.txt_rt b {
+    color: #E8E8E8;
+}
+
+/*文本框样式*/
+.form_box ul li input {
+    text-align: right;
+    border: none;
+}
+/*按钮*/
+.affirm{
+    width: 90%;
+    margin: 3rem auto;
+}
+.affirm input{
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    background: #FFA726;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    border:none;
+}

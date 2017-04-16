@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>升舱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/shipping_space.css"/>
+
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('ticket_accomplish.html','_self')"><i class="iconfont">
+                &nbsp;&#xe601;</i></span></div>
+            <span>升级舱位(上海-温哥华)</span>
+        </div>
+        <div class="main_space">
+            <!--选择升舱航程-->
+            <div class="voyage">
+                <ul>
+                    <li class="txt">请选择升舱航程</li>
+                    <li><input type="checkbox"/><span class="go">去</span>
+                        <span class="details"> 3-11 周6 21: : 00-22:06 达美航空(经济舱)</span></li>
+                    <li><input type="checkbox"/><span class="go">返</span>
+                        <span class="details"> 3-11 周6 21: : 00-22:06 达美航空(经济舱)</span></li>
+                </ul>
+            </div>
+            <!--选择升舱旅客-->
+            <div class="details_passenger">
+                <div class="txt">请选择升舱旅客</div>
+                <div class="passenger">
+                    <ul class="clear">
+                        <li class="active">HOU JIAN</li>
+                        <li>HOU JIAN</li>
+                        <li>HOU JIAN</li>
+                        <li>HOU JIAN</li>
+                        <li>HOU JIAN</li>
+                        <li>HOU JIAN</li>
+                    </ul>
+                </div>
+            </div>
+            <!--升舱/改签说明-->
+            <div class="upgrade_explain">
+                <div class="txt">升舱/改签说明 </div>
+                <div class="explain">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, maxime, nulla! Consequatur eius expedita harum illo similique sit sunt tempore
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="settings_title">
+        <a href="javascript:;">下一步</a>
+    </div>
+</footer>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
+<script>
+    $('.passenger li').toggle(function(){
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active');
+    })
+</script>
+</body>
+</html>

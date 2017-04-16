@@ -1,5 +1,10 @@
 /*大容器*/
-
+body{
+    background: #eee;
+}
+input{
+    font-family: Microsoft YaHei,"微软雅黑";
+}
 /*字体图标*/
 @font-face {
     font-family: 'iconfont';  /* project id 268261 */
@@ -10,7 +15,7 @@
     url('//at.alicdn.com/t/font_d9c3fien1edygb9.svg#iconfont') format('svg');
 }
 .iconfontyyy{
-    font-family:"iconfontyyy" !important;
+    font-family: Microsoft YaHei,"微软雅黑";
     font-size:16px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
@@ -29,13 +34,12 @@
     height: 2.8rem;
 }
 .main>.top .top_box{
-    box-shadow: 1px 1px 2px #A6DAF4;
+    box-shadow: 0 0 3px #29B6F6;
     width: 96%;
     height: 2.4rem;
     line-height: 2.4rem;
     margin: .3rem auto;
     background: #fff;
-    border: 1px solid #A6DAF4;
 }
 
 /*添加  选择乘机人*/
@@ -44,10 +48,13 @@
     background: #fff;
 }
 .add>.select p{
-    margin: 0 1rem;
+    margin: 0 .5rem;
 }
 .add>.select p span{
     color: #BDBFBF;
+}
+.add .passenger>div{
+    float: left;
 }
 .add .passenger{
     border-bottom: 1px solid #E8E8E8;
@@ -60,7 +67,7 @@
     border-radius: 3px;
     text-align: center;
     color: #039bf5;
-    margin: .3rem 1rem;
+    margin: .3rem .5rem;
 }
 .add .passenger .added{
     border:1px solid #9C989C;
@@ -106,7 +113,7 @@
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
-    line-height: 1rem;
+    line-height: .8rem;
     text-align: center;
     font-weight: 900;
     margin: .5rem;
@@ -131,6 +138,11 @@
     height: 2rem;
     line-height: 2rem;
 }
+.add_phone>ul li input{
+    width: 100%;
+    height: 2rem;
+    border: none;
+}
 .right_bor{
     border-right: 1px solid #E8E8E8;
 }
@@ -141,7 +153,7 @@
     flex:1 ;
 }
 .add_phone>ul li.phone{
-    flex: 2;
+    flex: 1.5;
 }
 .add_phone>ul li.phone input{
     height: 2rem;
@@ -149,13 +161,40 @@
     margin-left: 1rem;
 }
 .add_phone>ul li.frontier{
-    flex: 1;
+    flex: 1.5;
+    position: relative;
+    text-align: right;
+    z-index: 99;
 }
-.add_phone>ul li.frontier select{
-    border: none;
+.add_phone>ul li.frontier div{
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid #DDDDDD;
+    background: #fff;
+    position: absolute;
+    top:2rem;
+    right:0;
 }
-.add_phone>ul li.frontier select option{
-    border: none;
+.add_phone>ul li.frontier div ul{
+    height: 100%;
+}
+.add_phone>ul li.frontier div li{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.add_phone>ul li.frontier div li.active{
+    background: #29b6f6;
+    color: #fff;
+}
+.mengceng{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0);
+    z-index: 1;
+    top:-100%;
+    display: none;
 }
 .add_phone .email{
     width: 94%;
@@ -188,9 +227,6 @@
     color: #039FE5;
     margin-left: .2rem;
 }
-.accident>.left p,.delay>.left p{
-    color:#FF9E77;
-}
 p{
     margin: 0;
 }
@@ -208,6 +244,59 @@ p{
 }
 .certificate{
     line-height: 2rem;
+}
+
+/*保险说明弹出层*/
+.pop_explain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(255,255,255,0.8);
+    top: 0;
+    z-index: 99999999;
+    display: none;
+}
+.explain_content{
+    width: 90%;
+    height: 90%;
+    margin:  10% 5% 0 5%;
+}
+.explain_content .xx{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 1rem;
+
+}
+.explain_title{
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: .8rem;
+    position: relative;
+}
+.explain_content .txt{
+    margin-top: .5rem;
+}
+/*报销凭证隐藏层 追加样式*/
+.form_hidden{
+    background: #fff;
+    margin-top: .5rem;
+}
+.genre{
+    background: #eee;
+}
+.form_hidden .compile_box .genre{
+    margin-top: 0;
+    height: 3rem;
+}
+.form_hidden .compile_box .genre div{
+    margin-top: .5rem;
+}
+/*报销凭证地区弹出层 改绝对定位*/
+.picker-modal{
+    position: fixed;
+    z-index: 9999999;
 }
 /*优惠券*/
 .favorable{
@@ -232,7 +321,7 @@ p{
     width: 100%;
     height: 3rem;
     line-height: 3rem;
-    padding-left: 1rem;
+    padding-left: .5rem;
     font-size: .5rem;
 }
 /*去支付*/
@@ -244,20 +333,86 @@ p{
     background: #fff;
     line-height: 3rem;
     text-align: right;
+    z-index: 99999;
 }
 .pay strong{
     float: left;
-    color:#FF9B09;
+    color:#F9980B;
     padding-left: 1rem;
+}
+.pay{
+    border: 1px solid #E8E7E9;
 }
 .pay a{
     display: inline-block;
     width: 8rem;
     height: 2.5rem;
     line-height: 2.5rem;
-    background: #FFA726;
+    background: #F9980B;
     color: #fff;
     text-align: center;
     border-radius: 3px;
     margin: 0 .5rem;
+}
+
+/*明细的弹出框*/
+.pop_detail{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+.bot{
+    width: 100%;
+    /*height: 8rem;*/
+    position: absolute;
+    bottom: 3rem;
+    background: #fff;
+}
+.bot_box{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+.bot_box .cost{
+    border-bottom: 1px solid #EAE8EB;
+}
+.bot_box ul{
+    width: 90%;
+    height: 2rem;
+    margin-left: 5%;
+    display: flex;
+}
+.bot_box ul li{
+    flex: 1;
+    height:2rem;
+    line-height:2rem;
+}
+.txt_lf{
+    text-align: left;
+}
+.txt_rt{
+    text-align: right;
+}
+.money{
+    color: #F9980B;
+}
+
+/*配送方式弹出框*/
+.pop_distribution{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    font-size: .8rem;
+    background: #fff;
+    display: none;
+}
+.pop_distribution div{
+    width: 100%;
+    text-align: center;
+    color: #5DC6F5;
+    line-height: 3rem;
 }

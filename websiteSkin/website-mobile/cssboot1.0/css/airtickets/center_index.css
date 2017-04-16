@@ -1,20 +1,42 @@
+ul,p{
+    margin: 0;
+    padding: 0;
+}
 /*内容区域*/
 body{
-    font-size: .7rem;
+    font-size: .8rem;
+    background: #EBEBEB;
+    color: #607D8B;
 }
 .page_center{
     width: 100%;
     height: 100%;
 }
+/*返回键*/
+.retreat{
+    height: 3rem;
+    line-height: 3rem;
+}
+.retreat span{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+.retreat b{
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+}
 /*最上方 背景图*/
 .page_top{
     width:100%;
-    height: 10rem;
+    height: 7.5rem;
 }
 .page_top .bg_img{
     position: relative;
-    height: 10rem;
-    background: url("../../img/bj.jpg")0 -1rem no-repeat;
+    width:100%;
+    height: 7.5rem;
+    background: url("../../img/bj.png")0 0 no-repeat;
 }
 /*个人信息*/
 .page_top .my{
@@ -28,28 +50,107 @@ body{
 .my .head_portrait,.my .datum{
     text-align: center;
     /*line-height: 8rem;*/
-    height: 8rem;
+    height: 5rem;
 }
 .my .head_portrait{
-    flex: 2;
+    flex: 1;
 }
 .my .datum{
-    flex: 3;
+    flex: 5;
 }
 .datum .txt{
     text-align: left;
-    margin-top: 3rem;
+    margin-top:1rem;
+    font-size: .9rem;
 }
 .datum .txt ul{
     padding: 0;
 }
 
 .head_portrait>div{
-    margin: 1.5rem;
+    margin:0 1rem;
 }
 .head_img{
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    background: url("../../img/toux.jpg")no-repeat;
+    background: url("../../img/toux.png")center 0 no-repeat;
+}
+
+/*个人中心  页面内容*/
+.home_order_status{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    margin-top: .5rem;
+}
+.home_order_status li{
+    flex: 1;
+    padding: 15px 0;
+    text-align: center;
+}
+.home_order_status li span{
+    display: block;
+    margin: 0 auto 7px;
+    width: 1.8rem;
+    height:1.8rem;
+    padding-bottom: .5rem;
+}
+.home_order_status li i{
+    font-size: 1.8rem;
+
+}
+
+/*我的钱包*/
+.home{
+    margin-top: .5rem;
+    background: #fff;
+    font-size: .85rem;
+}
+.wallet{
+    padding-left: .5rem;
+    line-height: 3rem;
+    height: 3rem;
+    border-bottom: 1px solid #F0F0ED;
+}
+.home_list li:last-child{
+    border-left: 1px solid #F0F0ED;
+}
+.home_list li:not(:first-child){
+    width: 49%;
+    float: left;
+    text-align: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid #F0F0ED;
+
+}
+.home_list li:not(:first-child) span{
+    display: block;
+    width: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: .5rem;
+}
+/*选项*/
+.home_row li{
+    display: flex;
+    height: 3rem;
+    line-height: 3.1rem;
+}
+.home_row li div{
+    flex: 1;
+}
+.home_row li div:first-child{
+    margin: .2rem 0 0 .5rem;
+}
+.home_row li div:first-child i{
+    font-size: 1.3rem;
+    color: #03A9F4;
+}
+.home_row li div:nth-child(2){
+    flex: 9;
+}
+.home_row li:not(:last-child) div:not(:first-child){
+    border-bottom: 1px solid #F0F0ED;
 }

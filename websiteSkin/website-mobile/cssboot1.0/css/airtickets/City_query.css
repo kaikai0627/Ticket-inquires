@@ -1,0 +1,65 @@
+/*覆盖以前样式*/
+.selClearHeight{
+    height: 169px;
+}
+.font_finish{
+    font-weight: 400;
+    font-size: 16px;
+}
+/*选择城市 追加模糊搜索城市样式*/
+html,body{
+    height: 100%;
+    background: #F5F5F5;
+}
+.screen{
+    width: 100%;
+    background: #fff;
+    position: relative;
+    font-size: 14px ;
+    display: none;
+}
+.screen_box .screen_list li{
+    display: flex;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #D4D2D4;
+}
+.screen_box .screen_list li i{
+    color: #A3F4FF;
+    font-size: 2rem;
+    position: absolute;
+    top: 2.5rem;
+    right: -1.7rem;
+}
+.screen_list .flex_3 span{
+   position: relative;
+}
+
+.screen_box .screen_list li:last-child{
+    border-bottom: none;
+}
+.screen_box .screen_list li div{
+
+}
+.screen_list .flex_1 span{
+    display: inline-block;
+    width:2.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: #29B6F6;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+}
+.screen_list .flex_1{
+    flex: 1;
+    text-align: center;
+}
+.screen_list .flex_2{
+    flex: 3;
+    text-align: left;
+}
+.screen_box .screen_list .flex_3{
+    flex: 1;
+    text-align: center;
+}

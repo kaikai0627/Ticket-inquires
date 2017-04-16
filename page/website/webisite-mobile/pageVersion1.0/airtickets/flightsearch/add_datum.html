@@ -10,15 +10,51 @@
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/demos.css">
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/weui.min.css">
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/demo.css"/>
-    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/added_passenger.css"/>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/add_datum.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/voucher.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/plug_in.css"/>
+
 </head>
 <body>
+<!--保险说明的弹出框-->
+<div class="pop_explain">
+    <div class="explain_content">
+
+        <div class="explain_title">
+            <div class="xx"><i class="iconfont" style="font-size: 1rem">&#xe737;</i></div>
+            保险说明
+        </div>
+        <div class="txt">1、Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae consequatur
+            corporis, culpa dignissimos dolore fugit,
+            impedit incidunt labore laborum minus omnis pariatur placeat quo ratione similique suscipit ullam? Illum?
+        </div>
+        <div class="txt">2、Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda exercitationem neque
+            omnis quibusdam sunt ut voluptatem! Nisi
+            omnis quae quidem sapiente veritatis. Autem explicabo maxime nobis reiciendis repellat. Odio, soluta?
+        </div>
+    </div>
+</div>
+<!--明细的弹出框-->
+<div class="pop_detail" style="display: none;">
+    <!--内容外面的蒙层-->
+</div>
+
+<!--配送方式的弹出框-->
+<div class="pop_distribution">
+    <div></div>
+</div>
+
+
 <div class="main">
     <div class="top">
         <div class="top_box">
-            &nbsp;03-17周五 &nbsp;&nbsp;SHA-YVR&nbsp;&nbsp;&nbsp;<strong style="font-size: 14px" class="iconfont">&#xe67c;</strong> 35h45m
+            &nbsp;03-17周五 &nbsp;&nbsp;SHA-YVR&nbsp;&nbsp;&nbsp;<strong style="font-size: 14px" class="iconfont">
+            &#xe67c;</strong> 35h45m
         </div>
     </div>
     <div class="add">
@@ -26,8 +62,8 @@
             <p>选择乘机人 <span class="f_12">请仔细核对证件号及有效期</span></p>
         </div>
         <!--选择乘客 跳转新增乘客人 在新增乘客人点击完成 跳转回本页面 添加乘客人成功-->
-        <div class="passenger">
-            <div class="not_add" onclick="window.open('added_ passenger.html')">
+        <div class="passenger clear">
+            <div class="not_add addition" onclick="window.open('added_ passenger.html')">
                 <span>选择乘客人</span>
             </div>
             <div class="added" style="display: none;">
@@ -37,11 +73,11 @@
         <!--乘机人详情-->
         <div class="particulars">
             <!--点击 - 删除乘机人-->
-            <div class="lf">
+            <div class="lf subtract">
                 <b>-</b>
             </div>
             <!--点击下列信息 跳转到编辑乘机人-->
-            <div class="lf">
+            <div class="lf" onclick="window.open('compile.html')">
                 <div class="lf_top">
                     HOU JIAN
                 </div>
@@ -50,50 +86,54 @@
                 </div>
             </div>
         </div>
-        <div class="add_passenger">
+        <div class="add_passenger addition">
             <strong><b>+</b>新增乘客人</strong>
         </div>
     </div>
     <!--填写手机号 & email-->
-    <div class="add_phone">
+    <div class="add_phone overseas">
         <ul class="bottom_bor">
-            <li class="area_code right_bor">+国家区号</li>
+            <li class="area_code right_bor"><input type="text" value="+国家区号"/></li>
             <li class="phone"><input type="text" placeholder="手机号"/></li>
             <li class="frontier">
-                <select>
-                    <option>境外手机</option>
-                    <option>境内手机</option>
-                </select>
+                <span class="phone_txt">境外手机</span><b class="iconfont" style="color: #29b6f6;">&#xe606;</b>
+
+                <div class="phone_hidden" style="display: none">
+                    <ul class="click_phone">
+                        <li class="add">境内手机</li>
+                        <li class="undock active">境外手机</li>
+                    </ul>
+                </div>
             </li>
         </ul>
         <div class="email"><input type="text" placeholder="&nbsp;Email用于接收通知"/></div>
     </div>
+    <!--填写手机号 隐藏层-->
+    <div class="add_phone churchyard" style="display: none;">
+        <ul class="bottom_bor">
+            <li class="area_code right_bor">手机号</li>
+            <li class="phone"><input type="text"/></li>
+            <li class="frontier">
+                <span class="phone_txt">境内手机</span><b class="iconfont" style="color: #29b6f6;">&#xe606;</b>
+
+                <div class="phone_hidden" style="display: none">
+                    <ul class="click_phone">
+                        <li class="add active">境内手机</li>
+                        <li class="undock">境外手机</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--保险-->
-    <div class="insurance">
+    <div class="insurance" style="overflow: hidden">
         <!--航空意外险-->
         <div class="accident">
             <ul class="left">
-                <li><span>航空意外险<i class="iconfont">&#xe620;
-                </i></span><p class="rt">¥6060/人X0</p></li>
-                <li class="f_12">起飞到落地,一路为你守护</li>
-            </ul>
-            <ul class="right">
-               <li>
-                   <div class="item-input rt">
-                       <label class="label-switch">
-                           <input type="checkbox">
-                           <div class="checkbox"></div>
-                       </label>
-                   </div>
-               </li>
-            </ul>
-
-        </div>
-        <!--延误险-->
-        <div class="delay">
-            <ul class="left">
-                <li><span>航空延误险<i class="iconfont">&#xe620;
-                </i></span><p class="rt">¥6060/人X0</p></li>
+                <li><span class="explain">航空意外险<i class="iconfont">&#xe620;
+                </i></span>
+                    <!--被单击时添加f_orange变橙色-->
+                    <p class="rt f_grey">¥60/人X0</p></li>
                 <li class="f_12">起飞到落地,一路为你守护</li>
             </ul>
             <ul class="right">
@@ -101,6 +141,29 @@
                     <div class="item-input rt">
                         <label class="label-switch">
                             <input type="checkbox">
+
+                            <div class="checkbox"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!--延误险-->
+        <div class="delay">
+            <ul class="left">
+                <li><span class="explain">航空延误险<i class="iconfont">&#xe620;
+                </i></span>
+                    <!--被单击时添加f_orange变橙色-->
+                    <p class="rt f_grey">¥60/人X0</p></li>
+                <li class="f_12">起飞到落地,一路为你守护</li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <div class="item-input rt">
+                        <label class="label-switch">
+                            <input type="checkbox">
+
                             <div class="checkbox"></div>
                         </label>
                     </div>
@@ -115,18 +178,126 @@
                 </li>
 
             </ul>
+
             <ul class="right">
                 <li>
                     <div class="item-input">
                         <label class="label-switch">
-                            <input type="checkbox">
-                            <div class="checkbox"></div>
+                            <input type="checkbox" id="fapiao" value="1">
+
+                            <div class="checkbox" onclick="clickfapiao();"></div>
                         </label>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
+    <style>
+        .f_m5 {
+            display: none;
+        }
+    </style>
+    <div class="form_hidden" id="mydiv" style="display:none">
+        <div class="voucher_form voucher_hidden">
+            <div class="compile_box">
+                <ul>
+                    <li>
+                        <div>类型</div>
+                        <div class="genre">
+                            <div class="f_blue company">公司</div>
+                            <div class="private">个人</div>
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>抬头</div>
+                        <div><input type="text" placeholder="公司名称"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li class="distribution">
+                        <div>配送方式</div>
+                        <div>
+                            快递¥10<span><i class="iconfont">&#xe605;</i></span>
+                        </div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>收件人</div>
+                        <div><input type="text" placeholder="收件人姓名"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>联系手机</div>
+                        <div><input type="text" placeholder="手机号"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li class="region">
+                        <div>所在地区</div>
+                        <div>
+                            <input type="text" id="region" placeholder="省/市/区"/>
+                            <span><i class="iconfont">&#xe605;</i></span>
+                        </div>
+
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>详细地址</div>
+                        <div><input type="text" placeholder="不需要填写省/市/区"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人-->
+        <div class="voucher_form voucher_show" style="display: none;">
+            <div class="compile_box">
+                <ul>
+                    <li>
+                        <div>类型</div>
+                        <div class="genre">
+                            <div class="company">公司</div>
+                            <div class="private f_blue ">个人</div>
+                            <div></div>
+                        </div>
+                    </li>
+                    <li class="distribution">
+                        <div>配送方式</div>
+                        <div>
+                            <input type="text" placeholder=""/>
+                            <span>快递¥10</span>
+                        </div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>收件人</div>
+                        <div><input type="text" placeholder="收件人姓名"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>联系手机</div>
+                        <div><input type="text" placeholder="手机号"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li class="region">
+                        <div>所在地区</div>
+                        <div>
+                            <input type="text" id="region_private" placeholder="省/市/区"/>
+                            <span><i class="iconfont">&#xe605;</i></span>
+                        </div>
+
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>详细地址</div>
+                        <div><input type="text" placeholder="不需要填写省/市/区"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!--优惠券-->
     <div class="favorable">
         <div>优惠券</div>
@@ -136,37 +307,195 @@
         <div>点击去支付表示已阅读并同意 <a href="#">机票须知预订</a></div>
     </div>
     <div class="payment">
-        <div class="pay" onclick="window.open('pay.html','_self')">
-            <strong>¥23213</strong><span>明细<i class="iconfont">&#xe74d;</i></span><a href="#">去支付</a>
+        <div class="bot" style="display:none;">
+            <div class="bot_box">
+                <div class="cost">
+                    <ul>
+                        <li class="txt_lf">成人票</li>
+                        <li class="txt_rt"><span class="money">¥2345x1人</span></li>
+
+                    </ul>
+                    <ul>
+                        <li class="txt_lf">税费</li>
+                        <li class="txt_rt"><span class="money">¥2345x1人</span></li>
+                    </ul>
+                </div>
+                <div class="extra_cost">
+                    <ul>
+                        <li class="txt_lf">航空意外险</li>
+                        <li class="txt_rt"><span class="money">¥30x1人</span></li>
+
+                    </ul>
+                    <ul>
+                        <li class="txt_lf">尊享航延费</li>
+                        <li class="txt_rt"><span class="money">¥30x1人</span></li>
+                    </ul>
+                    <ul>
+                        <li class="txt_lf">配送费</li>
+                        <li class="txt_rt"><span class="money">¥10</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="pay">
+            <strong>¥23213</strong><span class="detail">明细<i class="iconfont">&#xe74d;</i></span><a
+                href="pay.html">去支付</a>
         </div>
     </div>
 </div>
-<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"> </script>
+<div class="mengceng">
+
+</div>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js'
+        charset='utf-8'></script>
 <script>
+    //        凭证 显示隐藏切换
 
-$(function(){
-    $('.added').toggle(function(){
-        $('.add>.particulars').css('display','block');
-        $('.added').css('border','1px solid #039be5');
-        $('.added').css('color','#039be5');
 
-    },function(){
-        $('.add>.particulars').css('display','none');
-        $('.added').css('border','1px solid #9c989c');
-        $('.added').css('color','#9c989c');
+    //        选择乘客人 显示隐藏切换
+    $('.added').toggle(function () {
+        $('.add>.particulars').css('display', 'block');
+        $('.added').css('border', '1px solid #039be5');
+        $('.added').css('color', '#039be5');
+
+    }, function () {
+        $('.add>.particulars').css('display', 'none');
+        $('.added').css('border', '1px solid #9c989c');
+        $('.added').css('color', '#9c989c');
+    });
+    $('.subtract').click(function () {
+        $('.add>.particulars').css('display', 'none');
+    })
+    //        选择乘客人
+    $('.addition').click(function () {
+        $('.added').css('display', 'block');
+        $('.not_add').css('display', 'none');
+    });
+    $('.frontier').click(function () {
+        $('.phone_hidden').css('display', 'block');
+        $('.mengceng').css('display', 'block');
+    });
+    //        选择境内境外手机
+    $('.phone_hidden li').click(function () {
+        $('.phone_hidden').fadeOut();
+        if ($(this).text() == '境内手机') {
+            $('.phone_txt').text('境内手机');
+            $('.overseas').css('display', 'none');
+            $('.churchyard').css('display', 'block');
+            $('.add').addClass('active');
+            $('.undock').removeClass('active');
+        } else {
+            $('.phone_txt').text('境外手机');
+            $('.overseas').css('display', 'block');
+            $('.churchyard').css('display', 'none');
+            $('.undock').addClass('active');
+            $('.add').removeClass('active');
+        }
+    });
+    $('.mengceng').click(function () {
+        $('.phone_hidden,.mengceng').fadeOut();
+    });
+    $('.xx').click(function () {
+        $('.pop_explain').css('display', 'none');
+    });
+    $('.explain').click(function () {
+        $('.pop_explain').css('display', 'block');
     });
 
-    $('.not_add').click(function () {
-        $('.added').css('display','block');
-        $('.not_add').css('display','none');
+    //        明细弹出层
+    $('.detail').toggle(function () {
+        $('.pop_detail').css('display', 'block');
+        $('.bot').css('display', 'block');
+    }, function () {
+        $('.pop_detail').css('display', 'none');
+        $('.bot').css('display', 'none');
     })
 
 
+    //    报销凭证
 
-})
-
-
+    $('.genre .company').click(function () {
+        $('.voucher_show').css('display', 'none');
+        $('.voucher_hidden').css('display', 'block');
+    });
+    $('.genre .private').click(function () {
+        $('.voucher_show').css('display', 'block');
+        $('.voucher_hidden').css('display', 'none');
+    });
+    $("#region").picker({
+        toolbarTemplate: '<header class="bar bar-nav up_flex" style="background: #666666;">\
+  <!--<div class="adult"> 成人</div><div class="children">儿童(2-12岁)</div><div class="infant">婴儿(小于2岁)</div>-->\
+  <ul style="font-size: .7rem"><li class="title_d1"><button class="button button-link pull-left close-picker" style="color: #fff;text-align: left">取消</button></li>\
+  <li class="title_d2 button button-link pull-right close-picker" style="color: #fff;">所在地区</li>\
+  <li class="title_d3"><button class="button button-link pull-right close-picker" style="color: #fff;text-align: right">确定</button></li></ul>\
+  </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['上海市', '湖南省', '安徽省', '广东省']
+            },
+            {
+                textAlign: 'center',
+                values: ['长宁区', '徐汇区', '浦东新区', '静安区']
+            },
+            {
+                textAlign: 'center',
+                values: ['长宁', '徐家汇', '南翔镇', '马陆']
+            }
+        ]
+    });
+    $("#region_private").picker({
+        toolbarTemplate: '<header class="bar bar-nav up_flex" style="background: #666666;">\
+  <!--<div class="adult"> 成人</div><div class="children">儿童(2-12岁)</div><div class="infant">婴儿(小于2岁)</div>-->\
+  <ul style="font-size: .7rem"><li class="title_d1"><button class="button button-link pull-left close-picker" style="color: #fff;text-align: left">取消</button></li>\
+  <li class="title_d2 button button-link pull-right close-picker" style="color: #fff;">所在地区</li>\
+  <li class="title_d3"><button class="button button-link pull-right close-picker" style="color: #fff;text-align: right">确定</button></li></ul>\
+  </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['上海市', '湖南省', '安徽省', '广东省']
+            },
+            {
+                textAlign: 'center',
+                values: ['长宁区', '徐汇区', '浦东新区', '静安区']
+            },
+            {
+                textAlign: 'center',
+                values: ['长宁', '徐家汇', '南翔镇', '马陆']
+            }
+        ]
+    });
 
 </script>
+<script>
+    //    function clickfapiao(){
+    //
+    //        $("#fapiao").click(function(){
+    //            if($(this).val()=="1"){
+    //
+    //                $(this).val(0);
+    //                $("#mydiv").show();
+    //            }else{
+    //
+    //                $(this).val(1);
+    //                $("#mydiv").hide();
+    //            }
+    //        });
+    //    }
+    function clickfapiao() {
+        $("#fapiao").click(function () {
+            if ($("input[type='checkbox']").is(':checked')) {
+
+                $("#mydiv").show();
+            } else {
+                $("#mydiv").hide();
+            }
+        });
+    }
+</script>
+
 </body>
 </html>

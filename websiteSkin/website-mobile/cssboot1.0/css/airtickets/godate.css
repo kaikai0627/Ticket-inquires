@@ -35,15 +35,65 @@ body{
 .dateFontStyle_date_s td .hasSelect{
 	background-color: #E4A23D;
 }
-.select_info_alert{
-	background-color: #E4A23D;
+.select_info_alert{	background: #FFA726;width: 90%;margin-left: 5% ;border-radius: 4px;color: #fff;font-size: .8rem;
 }
 .mainColor{
 	color: #fff;
 }
-.dd_l,.icon_fg_go{
-	padding-left: 1rem;
+.txt_delete{
+	position: absolute;
+	right: 2rem;
+	top: 1.8rem;
+	/*z-index: ;*/
 }
-.icon_fg_date_r,.icon_fg_back  {
-	padding-right: 1rem;
+
+/*去回程日期字体*/
+.icon_fg_date_l,.icon_fg_date_r{
+	bottom:0;
+	right: 0;
+}
+.dd_l,.dd_r_date{
+	height: 1rem;
+	font-size: .8rem;
+	padding-top: 2rem;
+	/*padding-left: 1rem;*/
+
+}
+.icon_fg_go,.icon_fg_back{
+	margin-top: 1rem;
+}
+.icon_fg_back{
+	left:0;
+	text-align: left;
+}
+.bgWhite table.MARGINAUTO{
+	padding-top: 0;
+}
+.z{
+	position: absolute;
+	width: 2rem;
+	height: 6px;
+	background: #fff;
+	z-index: 9999;
+	bottom: -3px;
+	right: 0;
+}
+#td_r .z{
+	right: 0;
+	width: 3rem;
+
+}
+.dd_r_date{
+	width: 59%;
+	float: left;
+	margin-right: 2rem;
+}
+.icon_fg_date_r{
+	right: 1rem;
+}
+
+/*日期返回的位置*/
+.tpp_tab_height span{
+	position: absolute;
+	top: 1rem;
 }

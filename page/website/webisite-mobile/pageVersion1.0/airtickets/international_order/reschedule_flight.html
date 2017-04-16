@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选择升级舱位</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/shipping_space.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/demo.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/reserve_style.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/added_passenger.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/plug_in.css"/>
+    <style>
+        /*放到css文件里会影响往返查询布局*/
+        .price {
+            line-height: 2.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('ticket_accomplish.html','_self')"><i class="iconfont">
+                &nbsp;&#xe601;</i></span></div>
+            <span>选择升级舱位</span>
+        </div>
+        <!--去程  起飞时间-->
+        <div class="settings_title" style="background: #78909C;">
+            <span>去程&nbsp;2017-06-06  12:56起飞</span>
+        </div>
+        <!--   路线-->
+        <div class="path">
+            <div class="p_top">
+                <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
+            </div>
+            <div class="p_box show_box">
+                <!--出发地  到达！-->
+                <div class="destination lf">
+                    <div class="d1">
+                        <srong class="f_black f_20">21:55 <br/></srong>
+                        <span class="f_12">虹桥T2</span>
+                    </div>
+                    <div class="d2">
+                        <i class="f-lst-line"></i>
+                        <div class="turn_chance f_12 f_blue ">
+                            转
+                            <br/>
+                            厦门
+                        </div>
+                    </div>
+                    <div class="d3">
+                        <srong class="f_black f_20">21:55</srong>
+                        <span class="f_12"><br/>温哥华M</span>
+                    </div>
+                </div>
+                <!-- 价格 -->
+                <div class="price  rt">
+                    <div>
+                        <b class="f_12">+1天</b>
+                        <span class="f_orange f_14">￥48888</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p_box hidden_box">
+                <!--出发地  到达！-->
+                <div class="destination lf">
+                    <div class="d1">
+                        <srong class="f_black f_20">21:55 <br/></srong>
+                        <span class="f_12">虹桥T2</span>
+                    </div>
+                    <div class="d2">
+                        <i class="f-lst-line"></i>
+
+                        <div class="turn_chance f_12">
+                            转
+                            <br/>
+                            厦门
+                        </div>
+                    </div>
+                    <div class="d3">
+                        <srong class="f_black f_20">21:55</srong>
+                        <span class="f_12"><br/>温哥华M</span>
+                    </div>
+                </div>
+            </div>
+            <!--小箭头-->
+            <div class="identifying rt">
+                <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
+            </div>
+        </div>
+        <!-- 机票 详情 隐藏-->
+        <div class="particulars" style="display: none">
+            <div class="draw_up">
+                <div class="lf f_12">
+                    <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                    <br/>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;商务舱</b><b onclick="openFrame()">退改签&gt;</b>
+                </div>
+                <div class="rt f_14">
+                    <label class="label-checkbox item-content">
+                        <input type="radio" name="my-radio">
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    </label>
+                </div>
+            </div>
+            <div class="draw_up">
+                <div class="lf f_12">
+                    <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                    <br/>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;头等舱</b><b onclick="openFrame()">退改签&gt;</b>
+                </div>
+                <div class="rt f_14">
+
+                    <label class="label-checkbox item-content">
+                        <input type="radio" name="my-radio">
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--回程  起飞时间-->
+        <div class="settings_title" style="background: #78909C;">
+            <span>去程&nbsp;2017-06-06  12:56起飞</span>
+        </div>
+        <!--   路线-->
+        <div class="path">
+            <div class="p_top">
+                <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
+            </div>
+            <div class="p_box show_box">
+                <!--出发地  到达！-->
+                <div class="destination lf">
+                    <div class="d1">
+                        <srong class="f_black f_20">21:55 <br/></srong>
+                        <span class="f_12">虹桥T2</span>
+                    </div>
+                    <div class="d2">
+                        <i class="f-lst-line"></i>
+                        <div class="turn_chance f_12 f_blue ">
+                            转
+                            <br/>
+                            厦门
+                        </div>
+                    </div>
+                    <div class="d3">
+                        <srong class="f_black f_20">21:55</srong>
+                        <span class="f_12"><br/>温哥华M</span>
+                    </div>
+                </div>
+                <!-- 价格 -->
+                <div class="price  rt">
+                    <div>
+                        <b class="f_12">+1天</b>
+                        <span class="f_orange f_14">￥48888</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p_box hidden_box">
+                <!--出发地  到达！-->
+                <div class="destination lf">
+                    <div class="d1">
+                        <srong class="f_black f_20">21:55 <br/></srong>
+                        <span class="f_12">虹桥T2</span>
+                    </div>
+                    <div class="d2">
+                        <i class="f-lst-line"></i>
+
+                        <div class="turn_chance f_12">
+                            转
+                            <br/>
+                            厦门
+                        </div>
+                    </div>
+                    <div class="d3">
+                        <srong class="f_black f_20">21:55</srong>
+                        <span class="f_12"><br/>温哥华M</span>
+                    </div>
+                </div>
+            </div>
+            <!--小箭头-->
+            <div class="identifying rt">
+                <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
+            </div>
+        </div>
+        <!-- 机票 详情 隐藏-->
+        <div class="particulars" style="display: none">
+            <div class="draw_up">
+                <div class="lf f_12">
+                    <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                    <br/>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;商务舱</b><b onclick="openFrame()">退改签&gt;</b>
+                </div>
+                <div class="rt f_14">
+                    <label class="label-checkbox item-content">
+                        <input type="radio" name="my-radio">
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    </label>
+                </div>
+            </div>
+            <div class="draw_up">
+                <div class="lf f_12">
+                    <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                    <br/>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;头等舱</b><b onclick="openFrame()">退改签&gt;</b>
+                </div>
+                <div class="rt f_14">
+
+                    <label class="label-checkbox item-content">
+                        <input type="radio" name="my-radio">
+                        <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--退改签弹出框-->
+<div class="pop_up" style="display: none;position:fixed;top:0">
+    <div class="pop_box">
+        <div class="close" onclick="closeFrame()">
+            <i class="iconfont" style="font-size:1.5rem;">&#xe737;</i>
+        </div>
+        <div class="top">
+            支付成功后，预计45分钟出票，出票前取消订单全额退款。
+        </div>
+        <div style="font-size: .6rem" class="container clear">
+            <ul class="bottom_no">
+                <li>退票条件</li>
+                <li>
+                    <ul class="clear">
+                        <li>起飞前</li>
+                        <li>不得退款</li>
+                    </ul>
+                    <ul>
+                        <li>起飞后</li>
+                        <li>不得退款</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="bottom_no">
+                <li>更改条件</li>
+                <li>按照客规为准</li>
+            </ul>
+            <ul class="bottom_no">
+                <li>签转条件</li>
+                <li>不得签转</li>
+            </ul>
+            <ul>
+                <li>退改说明</li>
+                <li>Lorem ipsum dolor sit amet, consectetur debitis delectus, dicta iusto </li>
+            </ul>
+        </div>
+        <div class="luggage">
+            <div class=" luggage_title">
+                <strong>行李额说明</strong>
+            </div>
+            <div class=" luggage_box">
+                <div class="box_lf">
+                    单程
+                </div>
+                <div class="box_rt">
+                    成人每人20公斤
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="settings_title" onclick="window.open('../flightsearch/pay.html','_self')">
+        <a href="javascript:;">下一步</a>
+    </div>
+</footer>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js'
+        charset='utf-8'></script>
+<script>
+        $('.path').toggle(function () {
+            $(this).next().css('display', 'block');
+            $(this).find('.icon_top').css('display', 'none');
+            $(this).find('.icon_bottom').css('display', 'block');
+            $(this).find('.show_box').css('display', 'none');
+            $(this).find('.hidden_box').css('display', 'block');
+        }, function () {
+            $(this).next().css('display', 'none');
+            $(this).find('.icon_top').css('display', 'block');
+            $(this).find('.icon_bottom').css('display', 'none');
+            $(this).find('.show_box').css('display', 'block');
+            $(this).find('.hidden_box').css('display', 'none');
+        })
+
+
+
+    function closeFrame(){
+        $('.pop_up').css('display','none');
+    }
+    function openFrame(){
+        $('.pop_up').css('display','block');
+    }
+</script>
+</body>
+</html>

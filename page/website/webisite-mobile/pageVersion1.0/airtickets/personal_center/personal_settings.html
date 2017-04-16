@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/demo.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/added_passenger.css"/>
+    <!--myStyle-->
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('centre_index.html','_self')"><i class="iconfont">&nbsp;&#xe601;</i></span></div>
+            <span>个人设置</span>
+        </div>
+        <div class="form_box">
+            <ul>
+                <li class="head_portrait_box">
+                    <div>头像</div>
+                    <div><span class="head_portrait"><i></i></span></div>
+                    <div class="txt_rt"><span><b class="iconfont">&#xe605;</b></span></div>
+                </li>
+                <li onclick="window.open('nickname.html','_self')">
+                    <div>昵称</div>
+                    <div><span>灰太狼</span></div>
+                    <div class="txt_rt"><span><b class="iconfont">&#xe605;</b></span></div>
+                </li>
+                <li onclick="window.open('modification_phone.html','_self')">
+                    <div>手机</div>
+                    <div><span>+86 137****2121</span></div>
+                    <div class="txt_rt"><span><b class="iconfont">&#xe605;</b></span></div>
+                </li>
+                <li class="gender">
+                    <div style="text-align: left">性别</div>
+                    <div><span class="man active"><b class="iconfont">&#xe862;</b><b>男</b></span></div>
+                    <div><span class="woman"><b class="iconfont">&#xe611;</b><b>女</b></span></div>
+                </li>
+                <li>
+                    <div>出生年月</div>
+                    <div><span><input type="text" id='picker-date' placeholder=""/></span></div>
+                    <div class="txt_rt"><span><b class="iconfont">&#xe605;</b></span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"> </script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js' charset='utf-8'></script>
+<script>
+    $("#picker-date").picker({
+        toolbarTemplate: '<header class="bar bar-nav up_flex" style="background: #666666;">\
+  <ul style="font-size: .7rem"><li style="width: 33%;text-align: left;line-height: 2rem"><button class="button button-link pull-left close-picker" style="color: #fff;">取消</button></li>\
+  <li style="width: 33%;text-align: center;line-height: 2rem;color: #fff;">选择出生日期</li>\
+  <li style="width:33%;text-align: right;line-height: 2rem"><button class="button button-link pull-right close-picker" style="color: #fff;">确定</button></li></ul>\
+  </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['1970年', '1971年', '1972年', '1973年', '1974年', '1975年', '1976年', '1977年']
+            },
+            {
+                textAlign: 'center',
+                values: [ '1月', '2月', '3月', '4月', '5月', '6月', '7月']
+            },
+            {
+                textAlign: 'center',
+                values: ['1日', '2日', '3日', '4日', '5日', '6日', '7日']
+            }
+        ]
+    });
+//性别
+        $('.man').click(function () {
+            $('.man').addClass('active');
+            $('.woman').removeClass('active');
+        });
+        $('.woman').click(function () {
+            $('.woman').addClass('active');
+            $('.man').removeClass('active');
+        })
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>账户资产</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/property.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/button.css"/>
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <!--标题-->
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('centre_index.html','_self')"><i class="iconfont">
+                &nbsp;&#xe601;</i></span></div>
+            <span>账户资产</span>
+        </div>
+
+        <!--充值面值-->
+        <div class="recharge_page">
+            <div class="face_value">
+                <div class="face_box">
+                    <p>充值面值</p>
+                    <ul class="num">
+                        <li class="active">500</li>
+                        <li>1000</li>
+                        <li>2000</li>
+                        <li>5000</li>
+                        <li>10000</li>
+                        <li>20000</li>
+                    </ul>
+                </div>
+             <div class="other_money">
+                <div class="import">
+                    <div>其他金额</div>
+                    <div class="text"><input id="jin" type="text" placeholder="请输入其它金额"/></div>
+                    <div class="affirm"><input type="submit" value="确认充值"/></div>
+                </div>
+             </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js' charset='utf-8'></script>
+<script>
+    $('.face_box li').click(function () {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+
+
+</script>
+</body>
+</html>

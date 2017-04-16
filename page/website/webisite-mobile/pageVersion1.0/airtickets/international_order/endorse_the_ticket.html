@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>改签</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/shipping_space.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/demo.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/added_passenger.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/plug_in.css"/>
+
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('ticket_accomplish.html','_self')"><i class="iconfont">
+                &nbsp;&#xe601;</i></span></div>
+            <span>改签(上海-温哥华)</span>
+        </div>
+        <div class="main_space">
+            <!--选择改签航程-->
+            <div class="voyage">
+                <ul>
+                    <li class="txt">请选择改签航程</li>
+                    <li><input type="checkbox" id="go"/><span class="go">去</span>
+                        <span class="details"> 3-11 周6 21: : 00-22:06 达美航空(经济舱)</span></li>
+                    <li><input type="checkbox" id="answer"/><span class="go">返</span>
+                        <span class="details"> 3-11 周6 21: : 00-22:06 达美航空(经济舱)</span></li>
+                </ul>
+                <!--请选择改签日期-->
+                <div class="change_date">
+                    <div class="txt">请选择改签日期</div>
+                    <div class="date_box clear">
+                        <div class="outward_voyage" id="go_date" style="display: none">
+                            <div><span>去程</span> <input type="text" id="picker-date_go"/><span><i class="iconfont">
+                                &#xe667;</i></span></div>
+                        </div>
+                        <div class="return_trip" id="answer_date" style="display: none">
+                            <div><span>返程</span> <input type="text" id="picker-date"/><span><i class="iconfont">
+                                &#xe667;</i></span></div>
+                        </div>
+                    </div>
+                </div>
+                <!--选择升舱旅客-->
+                <div class="details_passenger">
+                    <div class="txt">请选择升舱旅客</div>
+                    <div class="passenger">
+                        <ul class="clear">
+                            <li class="active">HOU JIAN</li>
+                            <li>HOU JIAN</li>
+                            <li>HOU JIAN</li>
+                            <li>HOU JIAN</li>
+                            <li>HOU JIAN</li>
+                            <li>HOU JIAN</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--升舱/改签说明-->
+                <div class="upgrade_explain">
+                    <div class="txt">升舱/改签说明</div>
+                    <div class="explain">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, maxime, nulla! Consequatur eius
+                        expedita harum illo similique sit sunt tempore
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="settings_title">
+        <a href="javascript:;">下一步</a>
+    </div>
+</footer>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js'
+        charset='utf-8'></script>
+<script>
+    $("#picker-date_go").datetimePicker({
+        toolbarTemplate: '<header class="bar bar-nav up_flex" style="background: #666666;">\
+  <!--<div class="adult"> 成人</div><div class="children">儿童(2-12岁)</div><div class="infant">婴儿(小于2岁)</div>-->\
+  <ul style="font-size: .7rem"><li><button class="button button-link pull-left close-picker" style="color: #fff;">取消</button></li>\
+  <li style="font-size: .8rem">选择出生日期</li>\
+  <li><button class="button button-link pull-right close-picker" style="color: #fff;">确定</button></li></ul>\
+  </header>'
+    });
+    $("#picker-date").datetimePicker({
+        toolbarTemplate: '<header class="bar bar-nav up_flex" style="background: #666666;">\
+  <!--<div class="adult"> 成人</div><div class="children">儿童(2-12岁)</div><div class="infant">婴儿(小于2岁)</div>-->\
+  <ul style="font-size: .7rem"><li><button class="button button-link pull-left close-picker" style="color: #fff;">取消</button></li>\
+  <li style="font-size: .8rem">选择出生日期</li>\
+  <li><button class="button button-link pull-right close-picker" style="color: #fff;">确定</button></li></ul>\
+  </header>'
+    });
+    $('.passenger li').toggle(function () {
+        $(this).addClass('active');
+    }, function () {
+        $(this).removeClass('active');
+    })
+
+//     去程返程时间的显示隐藏
+        $("#go").click(function () {
+            if ($("input[type='checkbox']").is(':checked')) {
+                $("#go_date").show();
+            } else {
+                $("#go_date").hide();
+            }
+        });
+        $("#answer").click(function () {
+            if ($("input[type='checkbox']").is(':checked')) {
+                $("#answer_date").show();
+            } else {
+                $("#answer_date").hide();
+            }
+        });
+</script>
+</body>
+</html>

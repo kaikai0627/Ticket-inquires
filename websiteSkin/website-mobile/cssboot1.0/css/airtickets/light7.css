@@ -166,6 +166,9 @@
           animation-direction: @direction;
 }
 */
+body,div{
+    font-family: Microsoft YaHei,"微软雅黑";/*自加属性*/
+}
 html {
   font-size: 20px;
 }
@@ -2002,7 +2005,8 @@ html:not(.watch-active-state) .list-block .item-link:active .item-inner,
   z-index: 1;
   width: 2.6rem;
   height: 1.6rem;
-  opacity: 0;
+  /*opacity: 0;*/
+    display: none;  /*后改样式*/
 }
 .label-switch input[type="checkbox"]:checked + .checkbox {
   background: #4cd964;

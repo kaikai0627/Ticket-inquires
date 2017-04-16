@@ -9,7 +9,12 @@
     <title>国际查询结果-往返</title>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/fg_pageMain.css" rel="stylesheet" type="text/css" />
     <!--myStyle-->
+    <link href="../../../../../../commonSkin/css/flights_logo.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../../../../../../commonSkin/css/html_tools.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/fg_toolsAdd.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/fg_pageMain.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/reserve_style.css"/>
     <!--往返后添加样式-->
@@ -23,10 +28,10 @@
         <div class="content">
             <!--顶部-->
             <div class="tracking_date">
-                <div class="go">
+                <div class="go" style="text-align: left">
                     <span>去</span> 3-11 周六21 : 00-22 : 06 达美航空
                 </div>
-                <div class="return_date">
+                <div class="return_date" style="text-align: left">
                     <span>返</span> 3-21 周六
                 </div>
             </div>
@@ -44,8 +49,8 @@
                                 <srong class="f_black f_20">21:55 <br/></srong>
                                 <span class="f_12">温哥华M</span>
                             </div>
-                            <div class="d2"><i></i>
-
+                            <div class="d2">
+                                <i class="f-lst-line"></i>
                                 <div class="turn_chance f_12 f_blue ">
                                     转
                                     <br/>
@@ -58,10 +63,9 @@
                             </div>
                         </div>
                         <!-- 价格 -->
-                        <div class="price rt">
+                        <div class="price  rt">
                             <div>
-                                <b class="f_12">+1天</b>
-                                <span class="f_14"><strong>往返价格</strong><br/><span>￥48888</span></span>
+                                <span><strong>往返价格</strong><br/><span class="f_14">￥48888</span></span>
                             </div>
                         </div>
                     </div>
@@ -70,9 +74,10 @@
                         <div class="destination lf">
                             <div class="d1">
                                 <srong class="f_black f_20">21:55 <br/></srong>
-                                <span class="f_12">温哥华M</span>
+                                <span class="f_12">虹桥T2</span>
                             </div>
-                            <div class="d2"><i></i>
+                            <div class="d2">
+                                <i class="f-lst-line"></i>
 
                                 <div class="turn_chance f_12">
                                     转
@@ -82,24 +87,106 @@
                             </div>
                             <div class="d3">
                                 <srong class="f_black f_20">21:55</srong>
-                                <span class="f_12"><br/>虹桥T2</span>
+                                <span class="f_12"><br/>温哥华M</span>
                             </div>
                         </div>
                     </div>
                     <!--小箭头-->
                     <div class="identifying rt">
                         <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
-                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">&#xe74d;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
                     </div>
                 </div>
+                <!-- 机票 详情 隐藏-->
+                <div class="particulars" style="display: none">
+                    <div class="draw_up">
+                        <div class="lf f_12">
+                            <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                            <br/>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
+                        </div>
+                        <div class="rt f_14">
+                            <div onclick="window.open('answer_flight.html','_self')">
+                                <a href="javascript:;">订</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="draw_up">
+                        <div class="lf f_12">
+                            <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
+                            <br/>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
+                        </div>
+                        <div class="rt f_14">
+                            <div onclick="window.open('answer_flight.html','_self')">
+                                <a href="javascript:;">订</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--   路线-->
+                <div class="path">
+                    <div class="p_top">
+                        <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
+                    </div>
+                    <div class="p_box show_box">
+                        <!--出发地  到达！-->
+                        <div class="destination lf">
+                            <div class="d1">
+                                <srong class="f_black f_20">21:55 <br/></srong>
+                                <span class="f_12">温哥华M</span>
+                            </div>
+                            <div class="d2">
+                                <i class="f-lst-line"></i>
+                            </div>
+                            <div class="d3">
+                                <srong class="f_black f_20">21:55</srong>
+                                <span class="f_12"><br/>虹桥T2</span>
+                            </div>
+                        </div>
+                        <!-- 价格 -->
+                        <div class="price  rt">
+                            <div>
+                                <span><strong>往返价格</strong><br/><span class="f_14">￥48888</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_box hidden_box">
+                        <!--出发地  到达！-->
+                        <div class="destination lf">
+                            <div class="d1">
+                                <srong class="f_black f_20">21:55 <br/></srong>
+                                <span class="f_12">虹桥T2</span>
+                            </div>
+                            <div class="d2"> <i class="f-lst-line"></i>
 
+                                <div class="turn_chance f_12">
+                                    转
+                                    <br/>
+                                    厦门
+                                </div>
+                            </div>
+                            <div class="d3">
+                                <srong class="f_black f_20">21:55</srong>
+                                <span class="f_12"><br/>温哥华M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--小箭头-->
+                    <div class="identifying rt">
+                        <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
+                    </div>
+                </div>
                 <!-- 机票 详情 隐藏-->
                 <div class="particulars" style="display: none">
                     <div class="draw_up">
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -111,7 +198,7 @@
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -120,12 +207,12 @@
                         </div>
                     </div>
                 </div>
-                <!--路线-->
+                <!--   路线-->
                 <div class="path">
                     <div class="p_top">
                         <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
                     </div>
-                    <div class="p_box">
+                    <div class="p_box show_box">
                         <!--出发地  到达！-->
                         <div class="destination lf">
                             <div class="d1">
@@ -133,7 +220,7 @@
                                 <span class="f_12">温哥华M</span>
                             </div>
                             <div class="d2">
-                                <i></i>
+                                <i class="f-lst-line"></i>
                             </div>
                             <div class="d3">
                                 <srong class="f_black f_20">21:55</srong>
@@ -143,13 +230,36 @@
                         <!-- 价格 -->
                         <div class="price  rt">
                             <div>
-                                <span class="f_14"><strong>往返价格</strong><br/><span>￥48888</span></span>
+                                <span><strong>往返价格</strong><br/><span class="f_14">￥48888</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p_box hidden_box">
+                        <!--出发地  到达！-->
+                        <div class="destination lf">
+                            <div class="d1">
+                                <srong class="f_black f_20">21:55 <br/></srong>
+                                <span class="f_12">虹桥T2</span>
+                            </div>
+                            <div class="d2"> <i class="f-lst-line"></i>
+
+                                <div class="turn_chance f_12">
+                                    转
+                                    <br/>
+                                    厦门
+                                </div>
+                            </div>
+                            <div class="d3">
+                                <srong class="f_black f_20">21:55</srong>
+                                <span class="f_12"><br/>温哥华M</span>
                             </div>
                         </div>
                     </div>
                     <!--小箭头-->
                     <div class="identifying rt">
-                        <span><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
                     </div>
                 </div>
                 <!-- 机票 详情 隐藏-->
@@ -158,7 +268,7 @@
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -170,7 +280,7 @@
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -179,12 +289,12 @@
                         </div>
                     </div>
                 </div>
-                <!--路线-->
+                <!--   路线-->
                 <div class="path">
                     <div class="p_top">
                         <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
                     </div>
-                    <div class="p_box">
+                    <div class="p_box show_box">
                         <!--出发地  到达！-->
                         <div class="destination lf">
                             <div class="d1">
@@ -192,7 +302,7 @@
                                 <span class="f_12">温哥华M</span>
                             </div>
                             <div class="d2">
-                                <i></i>
+                                <i class="f-lst-line"></i>
                             </div>
                             <div class="d3">
                                 <srong class="f_black f_20">21:55</srong>
@@ -202,72 +312,36 @@
                         <!-- 价格 -->
                         <div class="price  rt">
                             <div>
-                                <span class="f_14"><strong>往返价格</strong><br/><span>￥48888</span></span>
+                                <span><strong>往返价格</strong><br/><span class="f_14">￥48888</span></span>
                             </div>
                         </div>
                     </div>
-                    <!--小箭头-->
-                    <div class="identifying rt">
-                        <span><i class="iconfont" style="margin: 0">&#xe606;</i></span>
-                    </div>
-                </div>
-                <!-- 机票 详情 隐藏-->
-                <div class="particulars" style="display: none">
-                    <div class="draw_up">
-                        <div class="lf f_12">
-                            <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
-                            <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
-                        </div>
-                        <div class="rt f_14">
-                            <div onclick="window.open('answer_flight.html','_self')">
-                                <a href="javascript:;">订</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="draw_up">
-                        <div class="lf f_12">
-                            <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
-                            <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
-                        </div>
-                        <div class="rt f_14">
-                            <div onclick="window.open('answer_flight.html','_self')">
-                                <a href="javascript:;">订</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--路线-->
-                <div class="path">
-                    <div class="p_top">
-                        <span class="f_grey f_12">&nbsp;&nbsp;厦门航空MF8546&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;10h40m</span>
-                    </div>
-                    <div class="p_box">
+                    <div class="p_box hidden_box">
                         <!--出发地  到达！-->
                         <div class="destination lf">
                             <div class="d1">
                                 <srong class="f_black f_20">21:55 <br/></srong>
-                                <span class="f_12">温哥华M</span>
+                                <span class="f_12">虹桥T2</span>
                             </div>
-                            <div class="d2">
-                                <i></i>
+                            <div class="d2"> <i class="f-lst-line"></i>
+
+                                <div class="turn_chance f_12">
+                                    转
+                                    <br/>
+                                    厦门
+                                </div>
                             </div>
                             <div class="d3">
                                 <srong class="f_black f_20">21:55</srong>
-                                <span class="f_12"><br/>虹桥T2</span>
-                            </div>
-                        </div>
-                        <!-- 价格 -->
-                        <div class="price rt">
-                            <div>
-                                <span class="f_14"><strong>往返价格</strong><br/><span>￥48888</span></span>
+                                <span class="f_12"><br/>温哥华M</span>
                             </div>
                         </div>
                     </div>
                     <!--小箭头-->
                     <div class="identifying rt">
-                        <span><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_top"><i class="iconfont" style="margin: 0">&#xe606;</i></span>
+                        <span class="icon_bottom" style="display: none"><i class="iconfont" style="margin: 0;">
+                            &#xe74d;</i></span>
                     </div>
                 </div>
                 <!-- 机票 详情 隐藏-->
@@ -276,7 +350,7 @@
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -288,7 +362,7 @@
                         <div class="lf f_12">
                             <span class="f_14 f_orange">&nbsp;&nbsp;￥4888</span>
                             <br/>
-                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b>退改签&gt;</b>
+                            <b>&nbsp;&nbsp;&nbsp;&nbsp;经济舱</b><b onclick="openFrame()">退改签&gt;</b>
                         </div>
                         <div class="rt f_14">
                             <div onclick="window.open('answer_flight.html','_self')">
@@ -300,43 +374,192 @@
             </div>
         </div>
     </div>
-    <div class="footer f_14 txt_center">
-        <div class="screen lf">
-            <div>
-                <strong><i class="iconfont" style="margin: 0">&#xe606;</i></strong><span class="text">筛选</span>
-            </div>
-        </div>
-        <div class="time lf">
-            <div>
-                <strong><i class="iconfont" style="margin: 0">&#xe67c;</i></strong><span class="text">时间</span>
-            </div>
+    <!--lan--->
+    <div id="lanview" class="lanview" style="width: 100%; display: block;">
+        <table class="lanTab" style="width: 100%; ">
+            <tr>
 
-        </div>
-        <div class="cost lf">
-            <div>
-                <strong><i class="iconfont" style="margin: 0">&#xe60f;</i></strong><span class="text">价格</span>
-            </div>
+                <td onClick="sx_the_line(0);" >
 
+                    <img src="../../../../../../websiteSkin/website-mobile/cssboot1.0/img/miss_2.png" class="miss_1" />
+                    <br/>
+                    筛选
+
+                </td>
+
+                <td onClick="sx_the_time(this);" >
+
+                    <img src="../../../../../../websiteSkin/website-mobile/cssboot1.0/img/miss_1.png" class="miss_1" />
+                    <br/>
+                    <span id="sx_t">时间</span>
+
+                </td>
+
+                <td onClick="sx_the_price(this);" >
+                    <img src="../../../../../../websiteSkin/website-mobile/cssboot1.0/img/miss_3.png" class="miss_3" />
+                    <br/>
+                    <span id="sx_p">价格</span>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!---lan end-->
+
+
+    <!---sx the line --->
+
+    <div id="sx_the_line">
+        <table class="linTab">
+            <tr>
+                <td>
+                    <button class="btn" onClick="sx_the_line(1);">取消</button>
+                </td>
+                <td> <button class="btn2" onClick="sx_the_line(2);">清空筛选</button></td>
+                <td>
+                    <button class="btn" onClick="sx_the_line(3);">确定</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="bgWhite">
+                    <ul class="lineUL">
+                        <li class="on" id="onenav" onClick="changeFgListSx(0)">起飞时间</li>
+                        <li class="def" id="twonav" onClick="changeFgListSx(1)">舱位</li>
+                        <li class="def" id="threenav" onClick="changeFgListSx(2)">航空公司</li>
+                    </ul>
+                    <div class="lineUL_r">
+                        <div class="scrollZone">
+                            <ul id="one" class="inz f_en">
+                                <!-- 									<li><a href="#" class="mainColor">全天</a></li> -->
+                                <li><label><input class="ckck" type="checkbox" name="orgtime" value="0" />&nbsp;00:00-06:00</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="orgtime" value="1" />&nbsp;06:00-12:00</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="orgtime" value="2" />&nbsp;12:00-18:00</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="orgtime" value="3" />&nbsp;18:00-24:00</label></li>
+                            </ul>
+                            <ul id="two" class="inz" style="display: none;">
+                                <!-- 									<li><a href="#" class="mainColor">不限</a></li> -->
+                                <li><label><input class="ckck" type="checkbox" name="code" value="经济舱" />&nbsp;经济舱</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="code" value="公务舱" />&nbsp;公务舱</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="code" value="头等舱" />&nbsp;头等舱</label></li>
+
+                            </ul>
+                            <ul id="three" class="inz" style="display: none;">
+                                <!-- 							<c:forEach var="code" items="${codelist }"> -->
+
+                                <!-- 									<li><label><input class="ckck" type="checkbox" name="company" value="${code}" />&nbsp;${code}</label></li> -->
+                                <!-- 									</c:forEach> -->
+                                <!-- 			<li><a href="#" class="mainColor">不限</a></li> -->
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;南方航空</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;中国国航</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;海南航空</label></li>
+                            </ul>
+                            <ul id="four" class="inz" style="display: none;">
+                                <!-- 							<c:forEach var="code" items="${codebackList }"> -->
+
+                                <!-- 									<li><label><input class="ckck" type="checkbox" name="company" value="${code}" />&nbsp;${code}</label></li> -->
+                                <!-- 									</c:forEach> -->
+                                <li><a href="#" class="mainColor">不限</a></li>
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;南方航空</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;中国国航</label></li>
+                                <li><label><input class="ckck" type="checkbox" name="company" />&nbsp;海南航空</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!---end----->
+
+
+    <!--退改签弹出框-->
+    <div class="pop_up" style="display: none;">
+        <div class="pop_box">
+            <div class="close" onclick="closeFrame()">
+                <i class="iconfont" style="font-size:1.5rem;">&#xe737;</i>
+            </div>
+            <div class="top">
+                支付成功后，预计45分钟出票，出票前取消订单全额退款。
+            </div>
+            <div style="font-size: .6rem" class="container clear">
+                <ul class="bottom_no">
+                    <li>退票条件</li>
+                    <li>
+                        <ul class="clear">
+                            <li>起飞前</li>
+                            <li>不得退款</li>
+                        </ul>
+                        <ul>
+                            <li>起飞后</li>
+                            <li>不得退款</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="bottom_no">
+                    <li>更改条件</li>
+                    <li>按照客规为准</li>
+                </ul>
+                <ul class="bottom_no">
+                    <li>签转条件</li>
+                    <li>不得签转</li>
+                </ul>
+                <ul>
+                    <li>退改说明</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur debitis delectus, dicta iusto </li>
+                </ul>
+            </div>
+            <div class="luggage">
+                <div class=" luggage_title">
+                    <strong>行李额说明</strong>
+                </div>
+                <div class=" luggage_box">
+                    <div class="box_lf">
+                        单程
+                    </div>
+                    <div class="box_rt">
+                        成人每人20公斤
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"></script>
-    <script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js' charset='utf-8'></script>
     <script>
-        $(function(){
-            $('.passenger_book>div').toggle(function(){
-                $(this).next().css('display','block');
-                $(this).find('.icon_top').css('display','none');
-                $(this).find('.icon_bottom').css('display','block');
-                $(this).find('.show_box').css('display','none');
-                $(this).find('.hidden_box').css('display','block');
-            },function(){
-                $(this).next().css('display','none');
-                $(this).find('.icon_top').css('display','block');
-                $(this).find('.icon_bottom').css('display','none');
-                $(this).find('.show_box').css('display','block');
-                $(this).find('.hidden_box').css('display','none');
+        $(function () {
+            $('.path').toggle(function () {
+                $(this).next().css('display', 'block');
+                $(this).find('.icon_top').css('display', 'none');
+                $(this).find('.icon_bottom').css('display', 'block');
+                $(this).find('.show_box').css('display', 'none');
+                $(this).find('.hidden_box').css('display', 'block');
+            }, function () {
+                $(this).next().css('display', 'none');
+                $(this).find('.icon_top').css('display', 'block');
+                $(this).find('.icon_bottom').css('display', 'none');
+                $(this).find('.show_box').css('display', 'block');
+                $(this).find('.hidden_box').css('display', 'none');
             })
         })
+        function closeFrame(){
+            $('.pop_up').css('display','none');
+        }
+        function openFrame(){
+            $('.pop_up').css('display','block');
+        }
     </script>
+    <script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js' charset='utf-8'></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/lib/fastclick.js"></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/js/jquery-weui.js"></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/js/city-picker.js"></script>
+
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/fg_order_add.js"></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/fg_page_private.js"></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/fg_page_public.js"></script>
+    <script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/fg_bid_add.js"></script>
+
 </body>
 </html>

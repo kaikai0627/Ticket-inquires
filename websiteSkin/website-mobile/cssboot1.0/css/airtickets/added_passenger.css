@@ -7,14 +7,16 @@
 /*头部title*/
 .passenger_title{
     width: 100%;
-    height: 2rem;
+    height: 55px;
     background: #29B6F6;
+    font-size: 18px;
+
 }
 .passenger_title>ul{
     display: flex;
     width: 100%;
     height:100%;
-    line-height: 2rem;
+    line-height: 55px;
     color: #fff;
 
 }
@@ -89,6 +91,53 @@
     font-weight: 900;
 }
 
+.left_6{
+    margin-left: 6px;
+}
+.hint>div{
+    text-align: center;
+    color: red;
+}
+
+/*要修改选择器*/
+/*性别*/
+.form ul li.gender>div{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    border-right: 1px solid #E8E8E8;
+}
+.form ul li.gender>div:last-child{
+    border-right: none;
+}
+.form ul li.gender span{
+    display: inline-block;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    line-height: 1.5rem;
+}
+.form ul li.gender .man i{
+    color: #29b6f6;
+}
+.form ul li.gender .man.active{
+    background-color: #29B6F6;
+
+}
+.form ul li.gender .man.active i{
+    color: #fff;
+}
+.form ul li.gender .woman i{
+    color: #FF6091;
+}
+.form ul li.gender .woman.active{
+    background-color: #FF6091;
+
+}
+.form ul li.gender .woman.active i{
+    color: #fff;
+}
+
 /*证件类型的弹出框*/
 .up_container{
     position: fixed;
@@ -141,7 +190,7 @@
     color: #29b6f6;
 }
 
-/*弹出框*/
+/*插件弹出框*/
 .up_flex,.up_flex ul{
     display: flex;
     width: 100%;
@@ -169,13 +218,25 @@
     color: #29b6f6;
 }
 .picker-modal .picker-center-highlight{
-
     background: #fff;
     border: none;
     z-index: 0;
 }
 .picker-items{
     -webkit-mask-box-image:none;
+}
+/*头部样式*/
+.bar-nav ul li{
+    width: 33%;text-align: center;line-height: 2rem;color: #fff;
+}
+.bar-nav ul li button{
+    color: #fff;
+}
+.bar-nav ul li.title_d1{
+    text-align: left;
+}
+.bar-nav ul li.title_d3{
+    text-align: right;
 }
 body{
     background: none;

@@ -87,7 +87,7 @@ strong{
     color: #fff;
 }
 .flight_title p{
-    padding-left: 2em;
+    padding-left: 1.5em;
     margin: 0;
     height: 100%;
     line-height: 2rem;
@@ -97,26 +97,31 @@ strong{
     position: absolute;
 }
 .flight_title p span:last-child{
-    padding-left: 2rem;
+    padding-left: 1.8rem;
 }
 .tank>.total_prices .price_box{
-    margin: .3rem;
     font-size: .7rem;
     color: #6E8992;
     background: #fff;
 }
 .tank>.total_prices .price_box ul{
-    width: 80%;
+    width: 90%;
     height: 2rem;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .tank>.total_prices .price_box ul:nth-child(2){
     border-bottom: 1px solid #EBE8EB;
 }
 .tank>.total_prices .price_box ul li{
-    width: 50%;
+    width: 75%;
     height: 100%;
     line-height: 2rem;
+    text-align: center;
+    /*padding-left: .5rem;*/
+}
+.tank>.total_prices .price_box ul li:first-child{
+    width: 25%;
+
 }
 .tank>.total_prices .price_box ul li:last-child{
     float:right;
@@ -155,8 +160,8 @@ strong{
     border-right: 1px solid #ddd;
 }
 .explain table.explain_box{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 .bottom_bor{
     border-bottom: 1px solid #ddd;
@@ -170,8 +175,8 @@ strong{
     color: #6E8992;
 }
 .tank>.stipulate .stipulate_box{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 .tank .stipulate_lf{
     width: 25%;
@@ -194,8 +199,8 @@ strong{
     width: 100%;
 }
 .tank>.infuse .infuse_box{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 .infuse_box .infuse_top,.infuse_box .infuse_bottom{
     display: flex;
@@ -206,10 +211,8 @@ strong{
     line-height: 3rem;
     text-align: center;
 }
-.infuse_box .left i{
-    display: inline-block;
-    width: .8rem;
-    height: .8rem;
+.infuse_box .left b{
+    font-size: 1rem;
 }.infuse_box .left span{
      display: inline-block;
      width: 3rem;
@@ -238,6 +241,7 @@ strong{
     height:2.5rem;
     line-height:2.5rem;
     background: #FFA726;
+    border-radius: 0;
 }
 .seek .seek_btn a:hover{
     background: #FFA726;

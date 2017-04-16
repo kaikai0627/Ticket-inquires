@@ -1,6 +1,12 @@
+/*字体*/
+.f_22{
+    font-size: 22px;
+}
+/*内容*/
 .main{
     height: 100%;
 }
+/*图片*/
 .banana{
     height: 10rem;
     position: relative;
@@ -13,7 +19,7 @@
 }
 .banana span i{
     font-size: 1rem;
-    color: #fff;
+    color: #29B6F6;
     font-weight: 900;
 }
 .banana span.homepage{
@@ -25,18 +31,15 @@
 
 .content_box {
     width: 100%;
-    height: 100%;
 }
 
 /*国内 国际选择按钮*/
 div.buttons-tab {
   	position: absolute;
-   top:7.5rem;
+    top:7.5rem;
     left: 10%;
     height: 2.5rem;
 }
-
-
 .buttons-tab .tab-btn{
     background:#fff;
     color:#29B6F6;
@@ -44,7 +47,7 @@ div.buttons-tab {
     line-height: 2.5rem;
     width:50%;
     border:1px solid #29B6F6;
-    border-radius:0.2rem;
+    border-radius:3px;
 }
 .content_box .buttons-tab a.active{
     color:#fff;
@@ -70,9 +73,10 @@ div.buttons-tab {
 /*出发*/
 .start{
     width:44%;
-    height:3.5rem;
+    height:2.5rem;
     margin-left: 3px;
     border-bottom: 1px solid #BDBBBD;
+    margin-top: .8rem;
 }
 .start .clear ul.lf{
     padding-left: 4px;
@@ -91,16 +95,25 @@ div.buttons-tab {
 /*飞机图标*/
 .p_ico{
     width:10%;
-    height:3.5rem;
+    height:2.5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+.p_ico i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     background: url("../../img/plane.png")0 no-repeat;
+    margin-top: .8rem;
 }
 
 /*到达*/
 .arrive{
     width:44%;
-    height:3.5rem;
+    height:2.5rem;
 	margin-right: 3px;
     border-bottom: 1px solid #BDBBBD;
+    margin-top: .8rem;
 }
 .arrive .clear ul.rt{
     padding-right: .5rem;
@@ -125,22 +138,34 @@ div.buttons-tab {
     padding-left: 4px;
 
 }
-
-.trip input{
-    width: 100%;
-    height: 2rem;
-    border: none;
-}
 .trip .clear ul.lf li{
     padding-left:.5rem
 }
-
+/*去程返程共用属性*/
+.trip_month{
+    color: #606B7A;
+}
+.trip_week{
+    font-size: .7rem;
+}
+.f_999{
+    color: #999;
+}
 /*返程*/
 .leave{
    width:44%;
     height:3.5rem;
     margin-right: 3px;
     border-bottom: 1px solid #BDBBBD;
+    position: relative;
+}
+.leave .txt_delete{
+    position: absolute;
+    width: 20%;
+    top: 1.5rem;
+    right: 3px;
+    text-align: center;
+    z-index: 100;
 }
 .leave .clear ul.rt{
     padding-right: .5rem;
@@ -148,11 +173,8 @@ div.buttons-tab {
 .leave .clear ul li{
     text-align: right;
 }
-.leave input{
-    width: 100%;
-    height: 2rem;
-    border: none;
-    text-align: right;
+.leave .txt_center{
+    margin-right: 1rem;
 }
 /*成人 儿童ͯ*/
 .option{
@@ -207,10 +229,10 @@ div.buttons-tab {
 /*动态 & 订单̬*/
 .examine{
 	width:100%;
-	height:3.2rem;
+	height:100%;
 }
 .examine .lf{
-	margin:5% 0 0 16%; 
+	margin:6% 0 0 16%;
 }
 .examine>.clear>.rt{
 	margin:5% 16% 0 0; 
@@ -218,9 +240,9 @@ div.buttons-tab {
 
 .examine .lf b{
 	display: inline-block;
-	width:2.5rem;
-	height:2.5rem;
-	background:#29B6F6;
+	width:2.3rem;
+	height:2.3rem;
+	background:#fff;
 	border-radius:50%;
     color: #fff;
     line-height: 3.2rem;
@@ -240,16 +262,16 @@ div.buttons-tab {
 /*底部*/
 .footer{
 	width:100%;
-	height:2.2rem;
+	height:4.5rem;
 	line-height: 2.2rem;
 	background: #EBE8EB;
 	color:#03A9F4;
-	position:fixed;
-	bottom:0;
+	/*position:fixed;*/
+	/*bottom:0;*/
 	text-align: center;
 }
 
-/*弹出框*/
+/*插件弹出框*/
 .up_flex,.up_flex ul{
     display: flex;
     width: 100%;
@@ -268,6 +290,20 @@ div.buttons-tab {
 }
 .picker-items{
     -webkit-mask-box-image:none;
+}
+.picker-center-highlight{
+    border-bottom: 1px solid #29b6f6;
+    border-top: 1px solid #29b6f6;
+
+}
+.picker-item.picker-selected{
+    color: #29b6f6;
+}
+.bar .button-link{
+    font-size: 16px;
+}
+.picker-modal .bar{
+    border: none;
 }
 body{
     background: none;

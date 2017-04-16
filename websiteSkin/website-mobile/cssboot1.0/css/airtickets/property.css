@@ -1,0 +1,252 @@
+/*钱包余额*/
+body{
+    font-size: .8rem;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*总资产*/
+.main_frame{
+    width: 100%;
+    height: 100%;
+}
+.main-viewport{
+    width: 100%;
+}
+.total_assets{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    background: #fff;
+}
+.total_assets li{
+    flex: 1;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.total_assets li:first-child{
+    text-align: center;
+}
+.sum_up{
+    margin-bottom: .5rem;
+}
+.recharge{
+    height: 2rem;
+    line-height: 2rem;
+    width: 5rem;
+    color: #fff;
+    background: #29B6F6;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #29B6F6;
+    text-align: center;
+}
+.total_assets li:last-child{
+    margin-top: 3rem;
+}
+
+/*支付密码 设置*/
+.pay_pwd{
+    margin-top: .5rem;
+    background: #fff;
+    display: flex;
+    width: 100%;
+}
+.pay_pwd li{
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.pay_pwd div{
+    flex: 1;
+    /*line-height: 3rem;*/
+}
+.pay_pwd div b{
+    color: #9492A1;
+    font-size: .9rem;
+    margin:  0 .5rem;
+}
+.pay_pwd div:last-child{
+    text-align: right;
+    color: #DED9DE;
+}
+.pay_pwd div i{
+    font-size: 1.3rem;
+    color: #03A9F4;
+    margin:  0 .5rem;
+}
+
+/*消费记录  &&   与充值记录*/
+.buttons-tab,.content-block{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.buttons-tab{
+    border: 1px solid #F0F0F0;
+}
+.record{
+    margin-top: .5rem;
+    background: #fff;
+}
+.buttons-tab .btn.active{
+    background: #29b6f6;
+    box-shadow: 0 0 5px #29B6F6;
+    color: #fff;
+}
+.buttons-tab .btn{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    background: #fff;
+    color: #8496A2;
+    text-align: center;
+}
+/*记录 详情*/
+.record_box{
+    width: 100%;
+}
+.record_box li{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #F0F0F0;
+}
+.record_box span{
+    display: inline-block;
+    width: 100%;
+}
+.record_box li>div{
+    flex: 1;
+    margin:1rem .5rem;
+}
+.record_box li>div:last-child{
+    text-align: right;
+}
+.ticket_date{
+    font-size: .6rem;
+    color: #D2D0D2;
+}
+.consumption{
+    font-size: .9rem;
+}
+p{
+    text-align: center;
+}
+
+/*******************************账户充值page*********************************/
+.recharge_page{
+    width:100%;
+    background: #fff;
+}
+.face_value{
+    height: 100%;
+}
+.face_box{
+    width: 100%;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+.face_box p{
+    padding: .5rem 0 0 .5rem;
+    text-align: left;
+    margin: 0;
+}
+.face_box ul{
+    overflow: hidden;
+}
+.face_box ul li.active{
+    background: #29B6F6;
+    color: #fff;
+    border-color: #29b6f6;
+}
+.face_box ul li{
+    float: left;
+    text-align: center;
+    border: 1px solid #78909C;
+    height: 2.5rem;
+    width:5rem;
+    line-height: 2.5rem;
+    margin: .5rem;
+    border-radius: 3px;
+}
+/*其它金额*/
+.import .text input{
+    height: 2.5rem;
+    width: 90%;
+    margin-left:5%;
+    border-radius: 3px;
+    border: 1px solid #BBBBBB;
+    padding-left: .5rem;
+}
+.import div:first-child{
+    margin: .5rem;
+}
+
+/************************************授信page********************************/
+.extension{
+    display: flex;
+}
+.extension li{
+    flex: 1;
+    text-align: center;
+}
+.total_assets li:last-child{
+    margin-top: 2rem;
+}
+ul.credit_box li .residue{
+    flex: 5;
+}
+ul.credit_box li .way{
+    flex: 8;
+    text-align: right;
+}
+ul.credit_box li .i_f{
+    flex: 1;
+    margin: 0 .5rem 0 0;
+}
+ul.credit_box li .i_f b{
+    line-height: 5rem;
+}
+ul.credit_box i{
+    font-size: 1rem;
+}
+
+
+/***************************************账号授信page***************************************/
+.content-block .bill{
+    height: 2rem;
+    line-height: 2rem;
+    margin: .5rem 0 0 .5rem;
+    border-bottom: 1px solid #F0F0F0;
+}
+.bill_viewport ul .in_this{
+    flex: 2;
+    text-align: left;
+    margin: .5rem 0 0 .5rem;
+}
+.bill_viewport ul .in_this div:last-child{
+    margin-top: .5rem;
+}
+.bill_viewport ul:last-child{
+    flex: 1;
+}
+.bill_viewport ul .recharge{
+    margin-top: 2rem;
+}
+/*************************消费明细page**********************/
+.credit_box .the_total div:last-child{
+    flex: 1;
+    color: #FF9800;
+    font-size: .9rem;
+    margin-right: 1rem;
+}
+.credit_box .the_total div:first-child{
+    flex: 3;
+}
+.the_total span{
+    width: 100%;
+}

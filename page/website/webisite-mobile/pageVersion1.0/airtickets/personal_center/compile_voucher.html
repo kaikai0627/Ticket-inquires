@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>报销凭证</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/light7.css">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/demo.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/button.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/added_passenger.css"/>
+
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/voucher.css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/lib/weui.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/css/jquery-weui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/plug_in.css"/>
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title flex_3">
+            <div onclick="window.open('voucher.html','_self')">取消</div>
+            <div>编辑报销凭证</div>
+            <div onclick="window.open('voucher.html','_self')">保存</div>
+        </div>
+        <style>
+            .f_m5{
+                display: none;
+            }
+        </style>
+        <div class="voucher_form voucher_hidden">
+            <div class="compile_box">
+                <ul>
+                    <li>
+                        <div>类型</div>
+                        <div class="genre"><div class="f_blue company">公司</div><div class="private">个人</div><div></div></div>
+                    </li>
+                    <li>
+                        <div>抬头</div>
+                        <div><input type="text" placeholder="公司名称"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>收件人</div>
+                        <div><input type="text" placeholder="收件人姓名"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>联系手机</div>
+                        <div><input type="text" placeholder="手机号"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li class="region">
+                        <div>所在地区</div>
+                        <div>
+                            <input type="text" id="bid_ps_city" placeholder="省/市/区"/>
+                            <span><i class="iconfont">&#xe605;</i></span>
+                        </div>
+
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>详细地址</div>
+                        <div><input type="text" placeholder="不需要填写省/市/区"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>邮政编码</div>
+                        <div><input type="text" placeholder=""/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                </ul>
+            </div>
+        </div>
+
+        <!--个人-->
+        <div class="voucher_form voucher_show" style="display: none;">
+            <div class="compile_box">
+                <ul>
+                    <li>
+                        <div>类型</div>
+                        <div class="genre"><div class="company">公司</div><div class="private f_blue ">个人</div><div></div></div>
+                    </li>
+                    <li>
+                        <div>抬头</div>
+                        <div><input type="text" placeholder="个人名称"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>收件人</div>
+                        <div><input type="text" placeholder="收件人姓名"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>联系手机</div>
+                        <div><input type="text" placeholder="手机号"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li class="region">
+                        <div>所在地区</div>
+                        <div>
+                            <input type="text" id="bid_ps_city_1" placeholder="省/市/区"/>
+                            <span><i class="iconfont">&#xe605;</i></span>
+                        </div>
+
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>详细地址</div>
+                        <div><input type="text" placeholder="不需要填写省/市/区"/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                    <li>
+                        <div>邮政编码</div>
+                        <div><input type="text" placeholder=""/></div>
+                    </li>
+                    <div class="f_m5 f_red lf_m1">请填写</div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"> </script>
+<script type='text/javascript' src='../../../../../../websiteSkin/website-mobile/cssboot1.0/js/light7/light7.js' charset='utf-8'></script>
+<script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/lib/fastclick.js"></script>
+<script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/js/jquery-weui.js"></script>
+<script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/js/city-picker.js"></script>
+<script src="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/fg_bid_add.js"></script>
+<script>
+    $('.genre .company').click(function(){
+        $('.voucher_show').css('display','none');
+        $('.voucher_hidden').css('display','block');
+    });
+    $('.genre .private').click(function(){
+        $('.voucher_show').css('display','block');
+        $('.voucher_hidden').css('display','none');
+    });
+</script>
+</body>
+</html>

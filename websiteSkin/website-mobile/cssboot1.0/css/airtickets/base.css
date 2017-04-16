@@ -1,61 +1,130 @@
-body{
-    font-family: Microsoft YaHei,"微软雅黑";
-    overflow-x:hidden; overflow-y:auto;
+body {
+    font-family: Microsoft YaHei, "微软雅黑";
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
+    min-width: 240px;
 }
-.viewport{
-    max-width:640px; min-width:300px; margin:0 auto;
+
+.viewport {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
 }
-p,li,h1,h2,h3,h4,h5,h6,ul,ol,dd,dt,dl,{
+
+p, li, h1, h2, h3, h4, h5, h6, ul, ol, dd, dt, dl, {
     padding: 0;
     margin: 0;
 }
-li{
+
+li {
     list-style-type: none;
 }
-.tank{
+a{
+    text-decoration: none;
+}
+/* 未被访问的链接 */
+a:link{
+    color: #fff;
+}
+/* 已被访问的链接 */
+a:visited{
+    color: #fff;
+}
+/* 正在被点击的链接 */
+a:active{
+    color: #fff;
+}
+
+.tank {
     width: 100%;
     height: 100%;
 }
-.lf{
-    float:left;
+
+.lf {
+    float: left;
 }
-.rt{
-    float:right;
+
+.rt {
+    float: right;
 }
-.f_12{
-    font-size: .5rem;
+
+.lf_m1 {
+    padding-left: 1rem;
 }
-.f_14{
-    font-size:.7rem;
+
+.f_12 {
+    font-size: 13px;
 }
-.f_16{
+
+.f_14 {
+    font-size: .7rem;
+}
+
+.f_16 {
     font-size: .9em;
 }
-.f_20{
-    font-size:20px;
+
+.f_20 {
+    font-size: 20px;
 }
-.f_black{
-    color:#101010;
+
+.f_22 {
+    font-size: 1rem;
 }
-.f_orange{
+
+.f_m5 {
+    font-size: .5rem;
+}
+
+.f_red {
+    color: #FB2225;
+}
+
+.f_black {
+    color: #101010;
+}
+.f_blue {
+    color: #03A9F4;
+}
+.f_green{
+    color: #259B24;
+}
+.f_weight550 {
+    font-weight: 550;
+}
+
+.txt_center {
+    text-align: center;
+}
+
+.f_white {
+    color: #fff;
+}
+
+.f_grey {
+    color: #ADBBC3;
+}
+.f_orange {
     color:#FF9800;
 }
-.f_blue{
-    color:#03A9F4;
+
+.f_little {
+    font-size: .5rem;
 }
-.f_weight550{
-     font-weight:550;
- }
-.txt_center{
-	text-align: center;
+
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
 }
-.f_white{
-	color:#fff;
-}
-.f_grey{
-	color:#ADBBC3;
-}
-.f_little{
-	font-size: .5rem;
-}
+/*.goTop{*/
+/*background: #000;*/
+/*width: 2rem;*/
+/*height: 2rem;*/
+/*position: fixed;*/
+/*bottom: 3rem;*/
+/*right: 1rem;*/
+/*z-index: 999997;*/
+/*}*/

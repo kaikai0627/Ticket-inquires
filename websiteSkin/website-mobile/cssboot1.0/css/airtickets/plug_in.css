@@ -1,0 +1,42 @@
+/*日期控件 修改样式*/
+.picker-modal .picker-modal-inner .picker-items-col:first-child,
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(2),
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(3){
+    margin: 0;
+    width: 6rem;
+    z-index: 10;
+    text-align: center;
+}
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(4),
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(5),
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(6),
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(7){
+    display: none;
+}
+.picker-modal .picker-modal-inner .picker-items-col:nth-child(3){
+    text-align: right;
+}
+.picker-modal .picker-modal-inner .picker-items-col:first-child{
+    text-align: left;
+}
+
+
+
+/*jqueryweui地区插件样式更改*/
+.picker-items-col{
+    text-align: center;
+    z-index: 99999;
+}
+.picker-center-highlight{
+    background: #fff;
+    color: #000;
+    border: none;
+}
+.toolbar .title{
+    margin: 0;
+    background:#666 ;
+    color: #fff;
+}
+.toolbar .picker-button{
+    color: #fff;
+}

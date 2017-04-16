@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>重置支付密码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/personal_settings.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/modification_phone.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
+    <style>
+        .f_m5{
+            display: none;
+        }
+        input{
+            color:#607D8B;
+        }
+    </style>
+</head>
+<body>
+<div class="page_content">
+    <div class="container">
+        <div class="settings_title">
+            <div class="retreat"><span onclick="window.open('property.html','_self')"><i class="iconfont">&nbsp;&#xe601;</i></span></div>
+            <span>重置支付密码</span>
+        </div>
+        <div class="input_box">
+            <div class="phone_mark active focus">
+                <label>新手机号</label>
+                <input type="text" value="150****2112"/><span></span>
+            </div>
+            <div class="f_m5 f_red lf_m1">请填写</div>
+            <div class="verification_code focus">
+                <label>验证码</label>
+                <input type="text" placeholder="请输入验证码"/><span>获取验证码</span>
+            </div>
+            <div class="f_m5 f_red lf_m1">请填写</div>
+            <div class="phone_mark focus">
+                <label>新支付密码</label>
+                <input type="text" placeholder="6-20位字母、数字和字符"/><span></span>
+            </div>
+            <div class="f_m5 f_red lf_m1">请填写</div>
+            <div class="phone_mark focus">
+                <label>确认密码</label>
+                <input type="text" placeholder="6-20位字母、数字和字符"/><span></span>
+            </div>
+            <div class="f_m5 f_red lf_m1">请填写</div>
+            <div class="affirm" style="margin-top: 3rem"><input type="submit" value="立即重置"/></div>
+        </div>
+    </div>
+</div>
+<script src="../../../../../../commonSkin/js/jquery-1.8.3.min.js"> </script>
+<script>
+    $('.focus').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/*说明文字*/
+body{
+    box-sizing: border-box;
+}
+.page_content{
+    background: #fff;
+}
+.page_content .text{
+    background: #fff;
+    margin-top: 2rem;
+}
+.page_content .text h2{
+    text-align: center;
+    font-weight: 400;
+}
+.page_content .text p{
+    text-align: center;
+    font-size:15px;
+}
+/*新手机号*/
+.input_box div.active{
+    box-shadow: 0 0 8px #29B6F6;
+    /*border-color: #fff;*/
+    border: 1px solid #fff;
+}
+.input_box .phone_mark{
+    width: 96%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border: 1px solid #DED9DE;
+    margin-left: 2%;
+    display: flex;
+}
+.phone_mark input{
+    flex: 4;
+}
+.phone_mark label{
+    flex: 2.5;
+}
+.phone_mark span{
+    flex: 3;
+}
+.input_box>div{
+    margin-top: .2rem;
+}
+.input_box{
+    margin-right: .5rem;
+}
+.verification_code{
+    width: 96%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin-left: 2%;
+    border: 1px solid #DED9DE;
+    /*background: #000;*/
+    display: flex;
+}
+.verification_code input{
+    /*width: 43%;*/
+    flex: 4;
+}
+.verification_code span{
+    display: inline-block;
+    /*width: 30%;*/
+    flex: 3;
+    height: 2.5rem;
+    background: #FFA726;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #fff;
+    margin: .3rem .3rem 0 0;
+
+}
+.input_box label{
+    display: inline-block;
+    /*width: 25%;*/
+    flex: 2.5;
+    text-align: center;
+}
+input{
+    border: none;
+    width: 73%;
+    height: 3.2rem;
+    outline:none;
+    font-family: Microsoft YaHei,"微软雅黑";
+    font-size: 16px;
+}

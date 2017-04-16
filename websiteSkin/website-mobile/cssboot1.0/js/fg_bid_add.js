@@ -6,6 +6,12 @@
 			     console.log(values, displayValues);
 			   }
 		 });
+		$("#bid_ps_city_1").cityPicker({
+			   title: "选择城市",
+			   onChange: function (picker, values, displayValues) {
+			     console.log(values, displayValues);
+			   }
+		 });
 		
 		
 		$("#zjType").select({

@@ -15,11 +15,15 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/fg_pageMain_old.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet"
+          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/fg_pageMain_old.css" rel="stylesheet"
+          type="text/css"/>
     <link href="../../../../../../commonSkin/css/html_tools.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/lib/weui.min.css" rel="stylesheet" type="text/css"/>
-    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/css/jquery-weui.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/lib/weui.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="../../../../../../websiteSkin/website-mobile/cssboot1.0/js/weui/css/jquery-weui.css" rel="stylesheet"
+          type="text/css"/>
     <!--后追加样式-->
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/godate.css"/>
 
@@ -36,45 +40,36 @@
 <div class="pubMain">
 
     <div class="fixtop">
-        <div class="ttop_changed" id="ttop_changed">
+        <div class="ttop_changed" id="ttop_changed" style="border-bottom-width: 0px;">
             <table width="95%" class="MARGINAUTO">
                 <tr>
-                    <td width="35" class="tpp_tab_height cur" onclick="location.href='index.html'">
-                        <img src="../../../../../../websiteSkin/website-mobile/cssboot1.0/img/date_left.png"
-                             class='date_arrow_pubstyle'/>
+                    <td width="35" class="tpp_tab_height cur" onclick="location.href='nternational_index.html'">
+                        <span><i class="iconfont">&#xe601;</i></span>
                     </td>
                     <td class="text-center">
-                        <span class="f_12 f_gray"><span id="dateSel_hand_go">上海</span>&nbsp;&rarr;&nbsp;<span
-                                id="dateSel_hand_back">深圳</span></span>
-                        <br/>
                         <span class="f_15">选择<span id="dateSel_hand">去</span>程日期</span>
                     </td>
-                    <td class="font_finish_td_w"><a class="mainColor font_finish" href="index.html">完成</a></td>
+                    <td class="font_finish_td_w f_15"><a class="mainColor font_finish f_15" href="nternational_index.html" style="font-weight: 500">完成</a></td>
                 </tr>
             </table>
         </div>
-
-        <div class="clearfix h10 bgWhite"></div>
-        <div class="bgWhite">
+        <div class="bgWhite" style="background:#fff;width:90%;margin:0 auto;border-radius: 3px;">
             <table width="90%" class="MARGINAUTO" cellpadding="0" cellspacing="0">
                 <tr>
                     <td id="td_l" class="td_l_sel" onClick="toSelectFlightDate(0);">
                         <input type="text" id="date_l_ip" class="dd_l" value="" readonly="readonly"/>
 
-                        <div class="icon_fg_go">去程日期</div>
+                        <div class="icon_fg_go">去程</div>
                         <div class="icon_fg_date_l" id="date_l"></div>
-
                     </td>
                     <td width="51">
-
                     </td>
                     <td id="td_r" class="td_l" onClick="toSelectFlightDate(1);">
                         <input type="text" id="date_r_ip" class="dd_r_date" dir="rtl" value="" readonly="readonly"/>
 
-                        <div class="icon_fg_back">回程日期</div>
+                        <div class="txt_delete" onClick="cleanTheDate();"><i class="iconfont" style="color: #969696;">&#xe737;</i></div>
+                        <div class="icon_fg_back">返程</div>
                         <div id="date_r" class="icon_fg_date_r"></div>
-                        <div id="icon_x" class="icon_x" onClick="cleanTheDate();"></div>
-
                     </td>
                 </tr>
             </table>
@@ -318,7 +313,7 @@
 
             $.showLoading("正在查询中..");
 
-            setTimeout(function() {
+            setTimeout(function () {
                 $.hideLoading();
                 // $.toast("下单成功");
                 window.location.href = 'reserve.html';

@@ -2,39 +2,101 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>个人中心</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--myStyle-->
-    <link rel="stylesheet"
-          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/center_index.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/center_index.css"/>
     <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/base.css"/>
-    <link rel="stylesheet"
-          href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
+    <link rel="stylesheet" href="../../../../../../websiteSkin/website-mobile/cssboot1.0/css/airtickets/font/iconfont.css"/>
 </head>
 <body>
 <div class="page_center">
-    <div class="page_top">
-        <div class="bg_img">
-            <div><b class="iconfont" style="color:#fff;">&#xe61f;</b></div>
-            <div class="my">
-                <div class="head_portrait">
-                    <div class="head_img">
+    <div class="main">
+        <div class="page_top">
+            <!--简介背景图-->
+            <div class="bg_img">
+                <div class="retreat">
+                    <span onclick="window.open('../flightsearch/nternational_index.html','_self')"><b class="iconfont" style="color:#fff;">&#xe61f;</b></span></div>
+                <div class="my">
+                    <div class="head_portrait"  onclick="window.open('personal_settings.html','_self')">
+                        <div class="head_img">
 
+                        </div>
                     </div>
-                </div>
-                <div class="datum">
-                    <div class="txt">
-                        <ul>
-                            <li class="name">
-                                灰一
-                            </li>
-                            <li class="phone_num">
-                                155***51818
-                            </li>
-                        </ul>
+                    <div class="datum">
+                        <div class="txt">
+                            <ul>
+                                <li class="name">
+                                    灰一
+                                </li>
+                                <li class="phone_num">
+                                    155***51818
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!--内容区域-->
+        <div class="cm_page">
+            <div class="home_wrap">
+                <!--订单-->
+                <ul class="home_order_status">
+                    <li class="btn_order" onclick="window.open('../international_order/international_order.html','_self')">
+                        <span><i class="iconfont" style="color: #FF9800;">&#xe645;</i></span>
+                        全部订单
+                    </li>
+                    <li class="btnAwaitPay">
+                       <span> <i class="iconfont" style="color: #BB5ECC;">&#xe603;</i></span>
+                        待付款
+                    </li>
+                    <li class="btnNotTravel">
+                        <span><i class="iconfont" style="color: #8CA3FF;">&#xe78a;</i></span>
+                        未出行
+                    </li>
+                    <li class="btnNotTravel">
+                        <span><i class="iconfont" style="color: #2AC0FF;">&#xe607;</i></span>
+                        已完成
+                    </li>
+                </ul>
+                <!--我的钱包-->
+                <ul class="home_list clear home">
+                    <li class="wallet" style="font-size: .85rem">
+                        <span><b><i class="iconfont" style="color: #E51C23; font-size: 24px;">&#xe652;</i></b></span>&nbsp;我的钱包
+                    </li>
+                    <li onclick="window.open('credit_extension.html','_self')">
+                        <span class="f_20">0.00</span>
+                        <span>授信余额</span>
+                    </li>
+                    <li onclick="window.open('property.html','_self')">
+                        <span class="f_orange f_20">443.00</span>
+                        <span>账户余额</span>
+                    </li>
+                </ul>
+                <ul class="home_row home">
+                    <li onclick="window.open('frequent_traveller.html','_self')">
+                        <div><i class="iconfont">&#xe644;</i></div>
+                        <div>常用乘机人</div>
+                        <div><b><i class="iconfont">&#xe605;</i></b></div>
+                    </li>
+                    <li onclick="window.open('voucher.html','_self')">
+                        <div><i class="iconfont">&#xe608;</i></div>
+                        <div>报销凭证</div>
+                        <div><b><i class="iconfont">&#xe605;</i></b></div>
+                    </li>
+                    <li onclick="window.open('reset_pwd.html','_self')">
+                        <div><i class="iconfont">&#xe636;</i></div>
+                        <div>修改密码</div>
+                        <div><b><i class="iconfont">&#xe605;</i></b></div>
+                    </li>
+                    <li onclick="window.open('personal_settings.html','_self')">
+                        <div><i class="iconfont">&#xe6a4;</i></div>
+                        <div>设置 <span class="f_12 rt" style="color: #E0DBE7;">个人信息、安全设置等</span></div>
+                        <div><b><i class="iconfont">&#xe605;</i></b></div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>
